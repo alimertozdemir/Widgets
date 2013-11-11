@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/actionBarLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:maxWidth="150dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fiveAcceptance"
+            android:layout_width="185dp"
+            android:layout_height="100dp"
+            android:background="#287cee"
+            android:text="5 ONAY"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/customerSearch"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/fiveAcceptance"
+            android:background="#ff0000"
+            android:text="Customer Search"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:stretchColumns="1" >
+
+        <Button
+            android:id="@+id/visitAgenda"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#009819"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:text="Ziyaret Ajandası"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/currency"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/visitAgenda"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:background="#603cba"
+            android:text="Kur Bilgileri"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/KKBSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/currency"
+            android:background="#db532d"
+            android:text="KKB Sorgulama"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    
+   
+    <LinearLayout
+        android:id="@+id/sampleGridLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sample"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#7D0552"
+            android:text="Sample Text"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/lastGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFA500"
+            android:text="Sample Text"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
